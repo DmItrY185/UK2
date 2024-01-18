@@ -1,0 +1,191 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found - GOV.UK</title>
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="{% url 'main:index' %}" class="logo">
+                <span style="display: grid; place-items: center; ">
+                    <svg aria-hidden="true" height="30" width="36" focusable="false" viewBox="0 0 132 97"
+                        xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d=" M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4
+                        3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4
+                        3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1
+                        3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8
+                        1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6
+                        1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9
+                        9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8
+                        9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4
+                        7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4
+                        3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5
+                        11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1
+                        7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1
+                        0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9
+                        8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2
+                        7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5
+                        4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5
+                        6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11
+                        7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9
+                        11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1
+                        13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5
+                        3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3
+                        7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3
+                        8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                    <span> GOV.UK </span>
+                </span>
+            </a>
+        </div>
+    </header>
+    <div class="blue-line-top"></div>
+    <div class="main-content">
+        <h1 class="h1-page-not-found">Page not found</h1>
+        <p class="p-page-not-found">If you entered a web address, check it is correct.</p>
+        <p class="p2-page-not-found">Status code: 404</p>
+    </div>
+    <footer style="background: #f3f2f1;">
+        <div class="blue-line-bottom"></div>
+        <div class="footer-container">
+            <div class="services-and-information">
+                <h2 class="h2-footer">Services and information</h2>
+                <ul class="services-and-information-ul">
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/benefits" class="services-and-information-ul-li-a" target="_blank">Benefits</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/births-deaths-marriages" class="services-and-information-ul-li-a" target="_blank">Births, death, marriages and care</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/business" class="services-and-information-ul-li-a" target="_blank">Business and self-employed</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/childcare-parenting" class="services-and-information-ul-li-a" target="_blank">Childcare and parenting</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/citizenship" class="services-and-information-ul-li-a" target="_blank">Citizenship and living in the UK</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/justice" class="services-and-information-ul-li-a" target="_blank">Crime, justice and the law</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/disabilities" class="services-and-information-ul-li-a" target="_blank">Disabled people</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/driving" class="services-and-information-ul-li-a" target="_blank">Driving and transport</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/education" class="services-and-information-ul-li-a" target="_blank">Education and learning</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/employing-people" class="services-and-information-ul-li-a" target="_blank">Employing people</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/environment-countryside" class="services-and-information-ul-li-a" target="_blank">Environment and countryside</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/housing-local-services" class="services-and-information-ul-li-a" target="_blank">Housing and local services</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/tax" class="services-and-information-ul-li-a" target="_blank">Money and tax</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/abroad" class="services-and-information-ul-li-a" target="_blank">Passports, travel and living abroad</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/visas-immigration" class="services-and-information-ul-li-a" target="_blank">Visas and immigration</a>
+                    </li>
+                    <li class="services-and-information-ul-li">
+                        <a href="https://www.gov.uk/browse/working" class="services-and-information-ul-li-a" target="_blank">Working, jobs and pensions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="government-activity">
+                <h2 class="h2-footer">Government activity</h2>
+                <ul class="government-activity-ul">
+                <li class="services-and-information-ul-li">
+                    <a href="https://www.gov.uk/government/organisations" class="services-and-information-ul-li-a" target="_blank">Departments</a>
+                </li>
+                <li class="services-and-information-ul-li">
+                    <a href="https://www.gov.uk/search/news-and-communications" class="services-and-information-ul-li-a" target="_blank">News</a>
+                </li>   
+                <li class="services-and-information-ul-li">
+                    <a href="https://www.gov.uk/search/guidance-and-regulation" class="services-and-information-ul-li-a" target="_blank">Guidance and regulation</a>
+                </li>   
+                <li class="services-and-information-ul-li">
+                    <a href="https://www.gov.uk/search/research-and-statistics" class="services-and-information-ul-li-a" target="_blank">Research and statistics</a>
+                </li>   
+                <li class="services-and-information-ul-li">
+                    <a href="https://www.gov.uk/search/policy-papers-and-consultations" class="services-and-information-ul-li-a" target="_blank">Policy papers and consultations</a>
+                </li>   
+                <li class="services-and-information-ul-li">
+                    <a href="https://www.gov.uk/search/transparency-and-freedom-of-information-releases" class="services-and-information-ul-li-a" target="_blank">Transparency</a>
+                </li>   
+                <li class="services-and-information-ul-li">
+                    <a href="https://www.gov.uk/government/how-government-works" class="services-and-information-ul-li-a" target="_blank">How government works</a>
+                </li>   
+                <li class="services-and-information-ul-li">
+                    <a href="https://www.gov.uk/government/get-involved" class="services-and-information-ul-li-a" target="_blank">Get involved</a>
+                </li>                   
+                </ul>
+            </div>
+        </div>
+        <div class="border-footer"></div>
+        <div class="footer-container">
+            <ul class="ul-footer">
+                <li class="li-footer">
+                    <a href="https://www.gov.uk/help" class="services-and-information-ul-li-a" target="_blank">Help</a>
+                </li>
+                <li class="li-footer">
+                    <a href="https://www.gov.uk/help/privacy-notice" class="services-and-information-ul-li-a" target="_blank">Privacy</a>
+                </li>
+                <li class="li-footer">
+                    <a href="https://www.gov.uk/help/cookies" class="services-and-information-ul-li-a" target="_blank">Cookies</a>
+                </li>
+                <li class="li-footer">
+                    <a href="https://www.gov.uk/help/accessibility-statement" class="services-and-information-ul-li-a" target="_blank">Accessibility statement</a>
+                </li>
+                <li class="li-footer">
+                    <a href="https://www.gov.uk/contact" class="services-and-information-ul-li-a" target="_blank">Contact</a>
+                </li>
+                <li class="li-footer">
+                    <a href="https://www.gov.uk/help/terms-conditions" class="services-and-information-ul-li-a" target="_blank">Terms and conditions</a>
+                </li>
+                <li class="li-footer">
+                    <a href="https://www.gov.uk/cymraeg" class="services-and-information-ul-li-a" target="_blank">Rhestr o Wasanaethau Cymraeg</a>
+                </li>
+                <li class="li-footer">
+                    <a href="https://www.gov.uk/government/organisations/government-digital-service" class="services-and-information-ul-li-a" target="_blank">Government Digital Service</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-container-2">
+            <svg class="svg-footer" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
+              </svg>
+              <span>All content is available under the <a class="services-and-information-ul-li-a" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a>, except where otherwise stated</span>
+        </div>
+        <div class="footer">
+            <a class="crown-copyright" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/" target="_blank">
+                <div class="block">
+                    <img src="{% static 'images/logo_2.png' %}" alt="Logo_2" class="logo-2">
+                </div>
+                <div class="text-align">
+                    <span>© Crown copyright</span>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
