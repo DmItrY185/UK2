@@ -244,7 +244,7 @@ li::marker {
 .li-footer {
     display: inline-block;
     margin-right: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.25;
 }

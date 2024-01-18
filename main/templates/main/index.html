@@ -57,10 +57,10 @@
             <p>Use this tool to track the status of an immigration application, petition, or request.</p>
             <!-- <p><i>The receipt number is a unique 13-character identifier that consists of three letters and 10 numbers. Omit dashes ("-") when entering a receipt number. However, you can include all other characters, including asterisks ("*"), if they are listed on your notice as part of the receipt number. When a receipt number is entered, the "Check Status" button will be enabled and you can check the status.</i></p> -->
             <p>Enter a COS Number</p>
-            <form action="{% url 'main:index' %}" method="post">
-            {% csrf_token %}
+            <form action="{% url 'main:index' %}" method="get">
+{#            {% csrf_token %}#}
                 <div>
-                    <input id="receipt-number" name="q" type="text" placeholder="EAC1234567890" maxlength="13" value=
+                    <input id="receipt-number" name="q" type="text" placeholder="12345678901" maxlength="11" value=
                             {% if code == "Yes" %}""{% elif code %}{{ code }}{% endif %}>
                 </div>
                 {% if code == 'Yes' %}

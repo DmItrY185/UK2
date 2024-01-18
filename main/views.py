@@ -3,7 +3,7 @@ from main.models import Code
 
 
 def index(request):
-    query = request.POST.get('q', None)
+    query = request.GET.get('q', None)
 
     if query:
         value = Code.objects.filter(code=query)
