@@ -34,6 +34,11 @@ header {
     color: black; */
 }
 
+.top {
+    display: grid;
+    place-items: center;
+}
+
 p {
     font-family: "GDS Transport",arial,sans-serif;
     margin-top: 20px;
@@ -58,6 +63,10 @@ p {
     background: #1d70b8;
     height: 10px;
     width: 100%;
+}
+
+footer {
+    background: #f3f2f1;
 }
 
 .footer {
@@ -258,6 +267,10 @@ li::marker {
     display: flex;
     margin-left: 151.5px;
     margin-right: 151.5px;
+}
+
+.img_result {
+    margin-top: 20px;
 }
 
 /* ----------------------------------------------------------------------------- */

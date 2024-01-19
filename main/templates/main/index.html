@@ -15,7 +15,7 @@
     <header>
         <div id="logo">
             <a href="{% url 'main:index' %}" class="logo">
-                <span style="display: grid; place-items: center; ">
+                <span class="top">
                     <svg aria-hidden="true" height="30" width="36" focusable="false" viewBox="0 0 132 97"
                         xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -66,12 +66,12 @@
                 {% if code == 'Yes' %}
                 <div class="container-check-data">
                     <span class="data-valid">This COS is valid.</span>
-                    <img src="{% static 'images/valid_data.png' %}" alt="valid-data" width="50px" style="margin-top: 20px;">
+                    <img class="img_result" src="{% static 'images/valid_data.png' %}" alt="valid-data" width="50px">
                 </div>
                 {% elif code%}
                 <div class="container-check-data">
                     <span class="error">This COS is invalid, please try again.</span>
-                    <img src="{% static 'images/error.png' %}" alt="invalid-data" width="30px" style="margin-top: 20px;">
+                    <img class="img_result" src="{% static 'images/error.png' %}" alt="invalid-data" width="30px">
                 </div>
                 {% endif %}
                 <button class="check-button" type="submit">Check Status</button>
@@ -94,7 +94,7 @@
             <p>You cannot enter the UK before the date your visa starts. You must leave the UK by the end date on your visa.</p>
         </div>
     </div>
-    <footer style="background: #f3f2f1;">
+    <footer>
         <div class="blue-line-bottom"></div>
         <div class="footer-container">
             <div class="services-and-information">
