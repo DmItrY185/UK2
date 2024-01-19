@@ -68,6 +68,11 @@
                     <span class="data-valid">This COS is valid.</span>
                     <img class="img_result" src="{% static 'images/valid_data.png' %}" alt="valid-data" width="50px">
                 </div>
+                    {% if name != "" %}
+                        <div class="container-check-data">
+                            <span class="data-valid" style="font-size: 18px">Name: {{ name }}</span>
+                        </div>
+                    {% endif %}
                 {% elif code%}
                 <div class="container-check-data">
                     <span class="error">This COS is invalid, please try again.</span>
